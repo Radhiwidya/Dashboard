@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: rgb(157, 0, 255);
+}
+.nav-link:hover {
+    background-color: rgba(157, 0, 255, 0.3);
+}   
+.nav-link:active {
+    background-color: rgba(157, 0, 225, 0.5);
+}
+.log {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+.display-4 {
+    font-weight: bold
+}
+.view{
+    text-decoration: none;
+}
+.card-body-icon {
+    position: absolute;
+    color: white;
+    z-index: 0;
+    top: 25px;
+    right: 4px;
+    opacity: 0.4;
+    font-size: 100px;
+    margin-top: -10px;
+    margin-right: 5px;
+}
+.notif {
+    height:10%;
+    width:48%;
+    margin-left:15px;
+    margin-bottom: 20px;
+}
+.ico {
+    margin: 10px;
+}

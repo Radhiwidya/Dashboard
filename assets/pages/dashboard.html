@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="../images/Logo.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="dashboard.html">
+                <img src="../images/Logo.png" alt="Logo" height="45">
+            </a>
+            <div class="fixed-end logout">
+                <a href="../../index.html" class="log" data-toggle="tooltip" title="Logout"><i
+                        class="bi bi-box-arrow-right"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Batas Navbar -->
+
+    <!-- Sidebar -->
+    <div class="row no-gutters" style="margin-top: 60px;">
+        <div class="col-md-2 bg-dark mt-2 pr-3 pt-4">
+            <ul class="nav flex-column ml-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="dashboard.html"><i class="bi bi-speedometer"
+                            style="margin-right: 10px; "></i>Dashboard</a>
+                </li>
+                <hr style="color: white;">
+                <!--Pesanan-->
+                <li class="nav-item">
+                    <a href="" class="nav-link sidebar-link has-dropdown collapsed text-white" data-bs-toggle="collapse"
+                        data-bs-target="#pesanan" aria-expanded="false" aria-controls="pesanan">
+                        <i class="bi bi-cart" style="margin-right: 10px;"></i>
+                        <span>Pesanan</span>
+                    </a>
+                    <hr style="color: white;">
+                    <ul id="pesanan" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="nav-link sidebar-link text-white">Semua Pesanan</a>
+                            <hr style="color: white;">
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="nav-link sidebar-link text-white">Orderan Baru</a>
+                            <hr style="color: white;">
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="nav-link sidebar-link text-white">Terkonfirmasi</a>
+                            <hr style="color: white;">
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="nav-link sidebar-link text-white">Orderan Selesai</a>
+                            <hr style="color: white;">
+                        </li>
+                </li>
+            </ul>
+            <!-- Batas Pesanan -->
+            <!-- Stok Barang -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#"><i class="bi bi-box2"
+                        style="margin-right: 10px;"></i>Stok Barang</a>
+                <hr style="color: white;">
+            </li>
+            <!-- Batas Stok Barang -->
+            <!-- Pengiriman -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#"><i class="bi bi-truck"
+                        style="margin-right: 10px;"></i>Pengiriman</a>
+                <hr style="color: white;">
+            </li>
+            <!-- Batas Pengiriman -->
+            <!-- Penghasilan -->
+            <li class="nav-item">
+                <a href="" class="nav-link sidebar-link has-dropdown collapsed text-white" data-bs-toggle="collapse"
+                    data-bs-target="#penghasilan" aria-expanded="false" aria-controls="pesanan">
+                    <i class="bi bi-currency-dollar" style="margin-right: 10px;"></i>
+                    <span>Penghasilan</span>
+                </a>
+                <hr style="color: white;">
+                <ul id="penghasilan" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link sidebar-link text-white">Omset</a>
+                        <hr style="color: white;">
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link sidebar-link text-white">Laba/Rugi</a>
+                        <hr style="color: white;">
+                    </li>
+                </ul>
+                <!-- Batas Penghasilan -->
+                <center>
+                    <p style="color: rgb(163, 163, 163);">WA Hotline <br> 0811-2233-4455</p>
+                </center>
+            </li>
+            </ul>
+        </div>
+
+        <!-- Konten -->
+        <div class="col-md-10 p-5 pt-4">
+            <h3><i class="bi bi-speedometer" style="margin-right: 10px;"></i>DASHBOARD</h3>
+            <hr>
+            <div class="row">
+                <div class="card bg-secondary notif">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="bi bi-cart ico"></i>
+                        </div>
+                        <h5 class="card-title text-white">Pesanan</h5>
+                        <div class="display-4 text-white">
+                            231
+                        </div>
+                        <a href="#" class="view">
+                            <p class="card-text text-white">Lihat Detail <i class="bi bi-caret-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card bg-success notif">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="bi bi-truck ico"></i>
+                        </div>
+                        <h5 class="card-title text-white">Pengiriman</h5>
+                        <div class="display-4 text-white">
+                            138
+                        </div>
+                        <a href="#" class="view">
+                            <p class="card-text text-white">Lihat Detail <i class="bi bi-caret-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card bg-danger notif">
+                    <div class="card-body">
+                        <div class="card-body-icon" style="font-size: 90px;">
+                            <i class="bi bi-box2 ico"></i>
+                        </div>
+                        <h5 class="card-title text-white">Stok Barang</h5>
+                        <div class="display-4 text-white">
+                            1.872
+                        </div>
+                        <a href="#" class="view">
+                            <p class="card-text text-white">Lihat Detail <i class="bi bi-caret-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card bg-warning notif">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="bi bi-currency-dollar ico"></i>
+                        </div>
+                        <h5 class="card-title text-white">Penghasilan</h5>
+                        <div class="display-4 text-white">
+                            213,16<a style="font-size: 25px;">juta</a>
+                        </div>
+                        <a href="#" class="view">
+                            <p class="card-text text-white">Lihat Detail <i class="bi bi-caret-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Batas Sidebar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
